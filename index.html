@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<meta name="author" content="Minwoo Kim">
+	<meta name="description" content="Minwoo Kim E-Portfolio">
+	<meta property="og:title" content="Minwoo Kim E-Portfolio" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="Minwoo Kim E-Portfolio" />
+	
+	<title>Minwoo Kim E-Portfolio</title>
+
+	<link rel="shortcut icon" href="">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="header">
+		<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+			<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+				&#9776;
+			</button>
+			<div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+				<a class="navbar-brand" href="#">Minwoo Kim</a>
+				<ul class="nav navbar-nav pull-xs-right">
+					<li class="nav-item">
+						<a class="nav-link scroll-link" href="#" data-id="about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link scroll-link" href="#" data-id="education">Education</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link scroll-link" href="#" data-id="project">Project</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link scroll-link" href="#" data-id="experience">Experience</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link scroll-link" href="#" data-id="contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<!-- Carousel
+	================================================== -->
+	<div id="about" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#about" data-slide-to="0" class="active"></li>
+			<li data-target="#about" data-slide-to="1"></li>
+			<li data-target="#about" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+				<div class="container">
+					<div class="carousel-caption text-xs-left">
+						<h1>Example headline.</h1>
+						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+						<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Another example headline.</h1>
+						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+						<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+				<div class="container">
+					<div class="carousel-caption text-xs-right">
+						<h1>One more for good measure.</h1>
+						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+						<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#about" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#about" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div><!-- /.carousel -->
+
+	<div id="education" class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6 no-space">
+				<a href="#" class="chem" data-toggle="modal" data-target="#chem">
+					<img class="img-fluid" src="image/chem.png" alt="Chem" />
+				</a>
+			</div>
+			<div class="col-sm-6 no-space">
+				<a href="#" class="compsci" data-toggle="modal" data-target="#compsci">
+					<img class="img-fluid" src="image/compsci.jpg" alt="CompSci" />
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="chem" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">Chemistry</h4>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="compsci" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">Computer Science</h4>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery first, then Bootstrap JS. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

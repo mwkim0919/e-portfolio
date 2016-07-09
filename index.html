@@ -35,7 +35,7 @@
 						<a class="nav-link scroll-link" href="#" data-id="education">Education</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link scroll-link" href="#" data-id="project">Project</a>
+						<a class="nav-link scroll-link" href="#" data-id="project">Skill/Project</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link scroll-link" href="#" data-id="experience">Experience</a>
@@ -97,24 +97,44 @@
 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
-	</div><!-- /.carousel -->
+	</div>
 
-	<div id="education" class="container-fluid">
+	<!-- Education
+	================================================== -->
+	<div id="education" class="container-fluid scrollfade">
 		<div class="row">
 			<div class="col-sm-6 no-space">
-				<a href="#" class="chem" data-toggle="modal" data-target="#chem">
+				<a href="#" class="education" title="Chemistry" data-toggle="modal" data-target="#chem">
 					<img class="img-fluid" src="image/chem.png" alt="Chem" />
 				</a>
 			</div>
 			<div class="col-sm-6 no-space">
-				<a href="#" class="compsci" data-toggle="modal" data-target="#compsci">
+				<a href="#" class="education" title="Computer Science" data-toggle="modal" data-target="#compsci">
 					<img class="img-fluid" src="image/compsci.jpg" alt="CompSci" />
 				</a>
 			</div>
 		</div>
 	</div>
 
-	<!-- Modal -->
+	<!-- Skill/Project
+	================================================== -->
+	<div id="project" class="container-fluid scrollfade">
+		<div class="row">
+			<div class="col-sm-6 no-space">
+				<a href="#" class="education" title="Chemistry" data-toggle="modal" data-target="#chem">
+					<img class="img-fluid" src="image/chem.png" alt="Chem" />
+				</a>
+			</div>
+			<div class="col-sm-6 no-space">
+				<a href="#" class="education" title="Computer Science" data-toggle="modal" data-target="#compsci">
+					<img class="img-fluid" src="image/compsci.jpg" alt="CompSci" />
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal
+	================================================== -->
 	<div class="modal fade" id="chem" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
@@ -122,14 +142,102 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<h4 class="modal-title" id="myModalLabel">Chemistry</h4>
+					<h4 class="modal-title" id="myModalLabel">University of British Columbia<br><small class="text-muted">Bachelor of Science in Chemistry</small></h4>
 				</div>
 				<div class="modal-body">
-					...
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<div class="card">
+						<!-- Default panel contents -->
+						<div class="card-header">Coursework:</div>
+						<div class="card-block">
+							<table class="table table-hover">
+								<thead>
+									<th>Course #</th>
+									<th>Title</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>CHEM121</td> 
+										<td>Structural Chemistry, with Application to Chemistry of the Elements</td>
+									</tr>
+									<tr>
+										<td>CHEM123</td> 
+										<td>Physical and Organic Chemistry</td>
+									</tr>
+									<tr>
+										<td>CHEM201</td> 
+										<td>Introduction to Physical Chemistry</td>
+									</tr>
+									<tr>
+										<td>CHEM202</td> 
+										<td>Coordination Chemistry</td>
+									</tr>
+									<tr>
+										<td>CHEM203</td> 
+										<td>Organic Chemistry I</td>
+									</tr>
+									<tr>
+										<td>CHEM204</td> 
+										<td>Organic Chemistry II</td>
+									</tr>
+									<tr>
+										<td>CHEM211</td> 
+										<td>Analytical Chemistry</td>
+									</tr>
+									<tr>
+										<td>CHEM304</td> 
+										<td>Fundamentals of Physical Chemistry</td>
+									</tr>
+									<tr>
+										<td>CHEM309</td> 
+										<td>Foundations of Inorganic Chemistry</td>
+									</tr>
+									<tr>
+										<td>CHEM310</td> 
+										<td>Chemistry of the Elements</td>
+									</tr>
+									<tr>
+										<td>CHEM311</td> 
+										<td>Chemistry of the Elements</td>
+									</tr>
+									<tr>
+										<td>CHEM312</td> 
+										<td>Introduction to Quantum Mechanics and Spectroscopy</td>
+									</tr>
+									<tr>
+										<td>CHEM320</td> 
+										<td>Structure of Atoms and Molecules</td>
+									</tr>
+									<tr>
+										<td>CHEM330</td> 
+										<td>Advanced Organic Chemistry</td>
+									</tr>
+									<tr>
+										<td>CHEM333</td> 
+										<td>Spectroscopic Techniques in Organic Chemistry</td>
+									</tr>
+									<tr>
+										<td>CHEM406</td> 
+										<td>Polymer Chemistry</td>
+									</tr>
+									<tr>
+										<td>CHEM411</td> 
+										<td>Chemistry and Synthesis of Natural Products</td>
+									</tr>
+									<tr>
+										<td>CHEM416</td> 
+										<td>Physical and Theoretical Organic Chemistry</td>
+									</tr>
+									<tr>
+										<td>CHEM427</td> 
+										<td>Material Chemistry</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -141,14 +249,102 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<h4 class="modal-title" id="myModalLabel">Computer Science</h4>
+					<h4 class="modal-title" id="myModalLabel">University of British Columbia<br><small class="text-muted">Bachelor of Science in Computer Science</small></h4>
 				</div>
 				<div class="modal-body">
-					...
+					<div class="card">
+						<!-- Default panel contents -->
+						<div class="card-header">Coursework:</div>
+						<div class="card-block">
+							<table class="table table-hover">
+								<thead>
+									<th>Course #</th>
+									<th>Title</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>CPSC110</td> 
+										<td>Computation, Programs, and Programming</td>
+									</tr>
+									<tr>
+										<td>CPSC121</td> 
+										<td>Models of Computation</td>
+									</tr>
+									<tr>
+										<td>CPSC210</td> 
+										<td>Software Construction</td>
+									</tr>
+									<tr>
+										<td>CPSC213</td> 
+										<td>Introduction to Computer Structures</td>
+									</tr>
+									<tr>
+										<td>CPSC221</td> 
+										<td>Basic Algorithms and Data Structures</td>
+									</tr>
+									<tr>
+										<td>CPSC302</td> 
+										<td>Numerical Computation for Algebraic Problems</td>
+									</tr>
+									<tr>
+										<td>CPSC304</td> 
+										<td>Introduction to Relational Databases</td>
+									</tr>
+									<tr>
+										<td>CPSC310</td>
+										<td>Introduction to Software Engineering</td>
+									</tr>
+									<tr>
+										<td>CPSC311</td> 
+										<td>Definition of Programming Languages</td>
+									</tr>
+									<tr>
+										<td>CPSC313</td> 
+										<td>Computer Hardware and Operating Systems</td>
+									</tr>
+									<tr>
+										<td>CPSC314</td>
+										<td>Computer Graphics</td>
+									</tr>
+									<tr>
+										<td>CPSC317</td> 
+										<td>Internet Computing</td>
+									</tr>
+									<tr>
+										<td>CPSC320</td> 
+										<td>Intermediate Algorithm Design and Analysis</td>
+									</tr>
+									<tr>
+										<td>CPSC322</td> 
+										<td>Introduction to Artificial Intelligence</td>
+									</tr>
+									<tr>
+										<td>CPSC340</td> 
+										<td>Machine Learning and Data Mining</td>
+									</tr>
+									<tr>
+										<td>CPSC404</td> 
+										<td>Advanced Relational Databases</td>
+									</tr>
+									<tr>
+										<td>CPSC410</td> 
+										<td>Advanced Software Engineering</td>
+									</tr>
+									<tr>
+										<td>CPSC420</td>
+										<td>Advanced Algorithms Design and Analysis</td>
+									</tr>
+									<tr>
+										<td>CPSC425</td>
+										<td>Computer Vision</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
 				</div>
 			</div>
 		</div>

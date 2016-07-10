@@ -10,11 +10,11 @@
 	<meta property="og:title" content="Minwoo Kim E-Portfolio" />
 	<meta property="og:image" content="" />
 	<meta property="og:description" content="Minwoo Kim E-Portfolio" />
-	
+
 	<title>Minwoo Kim E-Portfolio</title>
 
 	<link rel="shortcut icon" href="">
-	
+
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
@@ -48,7 +48,7 @@
 		</nav>
 	</div>
 
-	<!-- Carousel
+<!-- Carousel
 	================================================== -->
 	<div id="about" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
@@ -99,24 +99,34 @@
 		</a>
 	</div>
 
-	<!-- Education
+<!-- Education
 	================================================== -->
 	<div id="education" class="container-fluid scrollfade">
 		<div class="row">
 			<div class="col-sm-6 no-space">
-				<a href="#" class="education" title="Chemistry" data-toggle="modal" data-target="#chem">
-					<img class="img-fluid" src="image/chem.png" alt="Chem" />
-				</a>
+				<div class="chem">
+					<div class="container">
+						<div class="chem-text">
+							<h1><strong>Chemistry</strong></h1>
+							<button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#chem">See in Detail</button>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="col-sm-6 no-space">
-				<a href="#" class="education" title="Computer Science" data-toggle="modal" data-target="#compsci">
-					<img class="img-fluid" src="image/compsci.jpg" alt="CompSci" />
-				</a>
+				<div class="compsci">
+					<div class="container">
+						<div class="compsci-text">
+							<h1><strong>Computer Science</strong></h1>
+							<button type="button" class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#compsci">See in Detail</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- Skill/Project
+<!-- Skill/Project
 	================================================== -->
 	<div id="project" class="container-fluid scrollfade">
 		<div class="row">
@@ -126,7 +136,7 @@
 						<div class="project-text carousel-caption text-xs-left">
 							<h1>Technical Skills</h1>
 							<h5>My skills include programming languages and tools/environments used for programming.</h5><br>
-							<button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#tech-skill">See In Detail</button>
+							<button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#tech-skill">See in Detail</button>
 						</div>
 					</div>
 				</div>
@@ -137,7 +147,7 @@
 						<div class="project-text carousel-caption">
 							<h1>Academic Projects</h1>
 							<h5>There are programming projects I have done in university courses covering a variety of topics.</h5><br>
-							<button type="button" class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#academic-project">See In Detail</button>
+							<button type="button" class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#academic-project">See in Detail</button>
 						</div>
 					</div>
 				</div>
@@ -147,17 +157,17 @@
 					<div class="project-text carousel-caption text-xs-right">
 						<h1>Personal Projects</h1>
 						<h5>I have done several projects for myself to improve my coding skills and to learn new programming languages and tools.</h5><br>
-						<button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#personal-project">See In Detail</button>
+						<button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#personal-project">See in Detail</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- Modal
+<!-- Modal
 	================================================== -->
 	<div class="modal fade" id="chem" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -264,7 +274,7 @@
 		</div>
 	</div>
 	<div class="modal fade" id="compsci" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -371,21 +381,535 @@
 		</div>
 	</div>
 	<div class="modal fade" id="tech-skill" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<h4 class="modal-title" id="myModalLabel">Technical Skills</h4>
+					<!-- <h4 class="modal-title" id="myModalLabel">Technical Skills</h4> -->
 				</div>
 				<div class="modal-body">
 					<div class="row">
 						<div class="col-xs-6">
-							<h5>Programming languages</h5>
+							<ul class="list-group">
+								<li class="list-group-item list-group-item-info">
+									<strong>Programming languages</strong>
+								</li>
+								<li class="list-group-item list-group-item-success">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-507-star-half.png">
+									</span>
+									Java
+								</li>
+								<li class="list-group-item list-group-item-success">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									SQL
+								</li>
+								<li class="list-group-item list-group-item-success">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									HTML
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-507-star-half.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									JavaScript
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-507-star-half.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									Python
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-507-star-half.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									CSS
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-507-star-half.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									C/C++
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									Ruby
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									MatLab
+								</li>
+								<li class="list-group-item list-group-item-danger">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-507-star-half.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									PHP
+								</li>
+								<li class="list-group-item list-group-item-danger">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-507-star-half.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									C#
+								</li>
+							</ul>
 						</div>
 						<div class="col-xs-6">
-							Tools/Environment
+							<ul class="list-group">
+								<li class="list-group-item list-group-item-info">
+									<strong>Tools / Environment</strong>
+								</li>
+								<li class="list-group-item list-group-item-success">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-507-star-half.png">
+									</span>
+									Eclipse
+								</li>
+								<li class="list-group-item list-group-item-success">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									Git
+								</li>
+								<li class="list-group-item list-group-item-success">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									Linux (Ubuntu)
+								</li>
+								<li class="list-group-item list-group-item-success">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									Terminal
+								</li>
+								<li class="list-group-item list-group-item-success">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									MySQL
+								</li>
+								<li class="list-group-item list-group-item-success">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									Bootstrap
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-507-star-half.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									JQuery
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-507-star-half.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									Cordova / Ionic
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-507-star-half.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									SQLPlus / Oracle
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									Django
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									Vim
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									GDB
+								</li>
+								<li class="list-group-item list-group-item-warning">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									Ruby on Rails
+								</li>
+								<li class="list-group-item list-group-item-danger">
+									<span class="pull-xs-right">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-50-star.png">
+										<img src="glyphicon/glyphicons-507-star-half.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+										<img src="glyphicon/glyphicons-49-star-empty.png">
+									</span>
+									Unity
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="academic-project" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<table class="table table-responsive">
+								<thead>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Link</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td><strong>QuickByte<br></strong><p class="text-muted">Mobile App<br>(iOS/Android)</p></td>
+										<td>
+											<p>A mobile app that provides nearby restaurant locations</p>
+											<strong>Tags: </strong>
+											<span class="label label-pill label-default">Cordova / Ionic</span>
+											<span class="label label-pill label-default">JavaScript</span>
+											<span class="label label-pill label-default">HTML</span>
+											<span class="label label-pill label-default">CSS</span>
+											<span class="label label-pill label-default">Agile Method</span>
+										</td>
+										<td>
+											<a href="https://github.com/mwkim0919/QuickByte" class="btn btn-success" target="_blank">Repository</a>
+											<a href="https://youtu.be/p59Gy0IBWaI" class="btn btn-danger" target="_blank">Watch Demo</a>
+										</td>
+									</tr>
+									<tr>
+										<td><strong>MusicOn<br></strong><p class="text-muted">Web App</p></td>
+										<td>
+											<p>A web app that provides information of events happening in Vancouver</p>
+											<strong>Tags: </strong>
+											<span class="label label-pill label-default">Python</span>
+											<span class="label label-pill label-default">Django</span>
+											<span class="label label-pill label-default">JavaScript</span>
+											<span class="label label-pill label-default">HTML</span>
+											<span class="label label-pill label-default">CSS</span>
+											<span class="label label-pill label-default">MySQL</span>
+											<span class="label label-pill label-default">Agile Method</span>
+										</td>
+										<td><a href="https://github.com/chriscyang/musicon" class="btn btn-success" target="_blank">Repository</a></td>
+									</tr>
+									<tr>
+										<td><strong>Music Store Database Design<br></strong><p class="text-muted">Web App</p></td>
+										<td>
+											<p>A web app for a music store which can be used by the store manager, clerk, and customer</p>
+											<strong>Tags: </strong>
+											<span class="label label-pill label-default">PHP</span>
+											<span class="label label-pill label-default">HTML</span>
+											<span class="label label-pill label-default">CSS</span>
+											<span class="label label-pill label-default">MySQL</span>
+											<span class="label label-pill label-default">Database Design</span>
+										</td>
+										<td><a href="https://github.com/mwkim0919/cs304" class="btn btn-success" target="_blank">Repository</a></td>
+									</tr>
+									<tr>
+										<td><strong>Simple Web Proxy Filter<br></strong><p class="text-muted">Java App</p></td>
+										<td>
+											<p>A simple proxy server using Socket programming in C</p>
+											<strong>Tags: </strong>
+											<span class="label label-pill label-default">C</span>
+											<span class="label label-pill label-default">Internet Computing</span>
+										</td>
+										<td><a href="https://github.com/mwkim0919/cs317/tree/master/a3-proxy" class="btn btn-success" target="_blank">Repository</a></td>
+									</tr>
+									<tr>
+										<td><strong>Streaming Video with RTSP and RTP<br></strong><p class="text-muted">Java App</p></td>
+										<td>
+											<p>A Java application that can play a video via streaming</p>
+											<strong>Tags: </strong>
+											<span class="label label-pill label-default">Java</span>
+											<span class="label label-pill label-default">Internet Computing</span>
+										</td>
+										<td><a href="https://github.com/mwkim0919/cs317/tree/master/a2-rtsp" class="btn btn-success" target="_blank">Repository</a></td>
+									</tr>
+									<tr>
+										<td><strong>Simple FTP Client<br></strong><p class="text-muted">Java App</p></td>
+										<td>
+											<p>A Java FTP application using Java's Socket class</p>
+											<strong>Tags: </strong>
+											<span class="label label-pill label-default">Java</span>
+											<span class="label label-pill label-default">Internet Computing</span>
+										</td>
+										<td><a href="https://github.com/mwkim0919/cs317/tree/master/a1-ftp" class="btn btn-success" target="_blank">Repository</a></td>
+									</tr>
+									<tr>
+										<td><strong>Y86 Processor Simulator<br></strong><p class="text-muted">Java App</p></td>
+										<td>
+											<p>A Java Y86 machine simulator</p>
+											<strong>Tags: </strong>
+											<span class="label label-pill label-default">Java</span>
+											<span class="label label-pill label-default">Computer Hardware</span>
+											<span class="label label-pill label-default">Operating System</span>
+										</td>
+										<td><a href="https://github.com/mwkim0919/cs313/tree/master/a4" class="btn btn-success" target="_blank">Repository</a></td>
+									</tr>
+									<tr>
+										<td><strong>"Waldo" Android Application<br></strong><p class="text-muted">Android App</p></td>
+										<td>
+											<p>An Android application using <a href="http://www.translink.ca/" target="_blank">Translink</a> API to get to a "Waldo" from a given location</p>
+											<strong>Tags: </strong>
+											<span class="label label-pill label-default">Java</span>
+											<span class="label label-pill label-default">Object-oriented Programming</span>
+										</td>
+										<td><a href="https://github.com/mwkim0919/cs210" class="btn btn-success" target="_blank">Repository</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="personal-project" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="card-columns">
+						<div class="card">
+							<img class="card-img-top img-fluid" src="image/1to50.jpg" alt="1to50">
+							<div class="card-block">
+								<h4 class="card-title">1to50<br><small class="text-muted">Web Game</small></h4>
+								<p class="card-text">Click 1 to 50 as quickly as possible!</p>
+								<p class="card-text">
+									<strong>Tags: </strong>
+									<span class="label label-pill label-default">JavaScript</span>
+									<span class="label label-pill label-default">HTML</span>
+									<span class="label label-pill label-default">CSS</span>
+									<span class="label label-pill label-default">JQuery</span>
+								</p>
+								<a href="http://1to50.mwkim.net76.net/" class="btn btn-danger" target="_blank">Play!</a> 
+							</div>
+						</div>
+						<div class="card">
+							<img class="card-img-top img-fluid" src="image/mylab.jpg" alt="MyLab">
+							<div class="card-block">
+								<h4 class="card-title">MyLab<br><small class="text-muted">Web App</small></h4>
+								<p class="card-text">Manage your To-do List online.</p>
+								<p class="card-text">
+									<strong>Tags: </strong>
+									<span class="label label-pill label-default">Ruby on Rails</span>
+									<span class="label label-pill label-default">JavaScript</span>
+									<span class="label label-pill label-default">HTML</span>
+									<span class="label label-pill label-default">CSS</span>
+									<span class="label label-pill label-default">AJAX</span>
+								</p>
+								<a href="https://pure-tor-12263.herokuapp.com/" class="btn btn-success" target="_blank">Try it!</a> 
+							</div>
+						</div>
+						<div class="card card-inverse card-info text-xs-center">
+							<div class="card-block">
+								<h4 class="card-title">Click Me<br><small class="card-title text-muted">Java App</small></h4>
+								<p class="card-blockquote">Click the target as many times as you can in 15 seconds!</p>
+								<p class="card-text">
+									<strong>Tags: </strong>
+									<span class="label label-pill label-default">Java</span>
+									<span class="label label-pill label-default">Object-oriented</span>
+								</p>
+								<a href="https://github.com/mwkim0919/clickMe" class="btn btn-secondary" target="_blank">Repository</a> 
+							</div>
+						</div>
+						<div class="card card-inverse card-success text-xs-center">
+							<div class="card-block">
+								<h4 class="card-title">Lotto # Generator<br><small class="card-title text-muted">Java App</small></h4>
+								<p class="card-blockquote">This is your day!<br>Get your numbers!</p>
+								<p class="card-text">
+									<strong>Tags: </strong>
+									<span class="label label-pill label-default">Java</span>
+									<span class="label label-pill label-default">Object-oriented</span>
+								</p>
+								<a href="https://github.com/mwkim0919/Lotto" class="btn btn-secondary" target="_blank">Repository</a> 
+							</div>
+						</div>
+						<div class="card card-inverse card-primary text-xs-center">
+							<div class="card-block">
+								<h4 class="card-title">All About Vancouver<br><small class="card-title text-muted">Web App</small></h4>
+								<p class="card-blockquote">Get park & weather info of Vancouver!</p>
+								<p class="card-text">
+									<strong>Tags: </strong>
+									<span class="label label-pill label-default">Python</span>
+									<span class="label label-pill label-default">Django</span>
+									<span class="label label-pill label-default">HTML</span>
+									<span class="label label-pill label-default">CSS</span>
+									<span class="label label-pill label-default">MVC</span>
+								</p>
+								<a href="https://github.com/mwkim0919/vancouver" class="btn btn-secondary" target="_blank">Repository</a> 
+							</div>
+						</div>
+						<div class="card">
+							<img class="card-img-top img-fluid" src="image/mwkim.jpg" alt="mwkim">
+							<div class="card-block">
+								<h4 class="card-title">My E-portfolio<br><small class="text-muted">Website</small></h4>
+								<p class="card-text">Find out about me!</p>
+								<p class="card-text">
+									<strong>Tags: </strong>
+									<span class="label label-pill label-default">JavaScript</span>
+									<span class="label label-pill label-default">HTML</span>
+									<span class="label label-pill label-default">CSS</span>
+									<span class="label label-pill label-default">JQuery</span>
+									<span class="label label-pill label-default">Bootstrap</span>
+								</p>
+								<a href="http://mwkim.net76.net/" class="btn btn-primary" target="_blank">Home</a> 
+							</div>
+						</div>
+						<div class="card card-inverse card-warning text-xs-center">
+							<div class="card-block">
+								<h4 class="card-title">CodeAbbey<br><small class="card-title text-muted">Coding</small></h4>
+								<p class="card-blockquote">Solving coding problem in <a href="http://www.codeabbey.com/" target="_blank">CodeAbbey</a></p>
+								<p class="card-text">
+									<strong>Tags: </strong>
+									<span class="label label-pill label-default">C / C++</span>
+									<span class="label label-pill label-default">Java</span>
+									<span class="label label-pill label-default">Python</span>
+									<span class="label label-pill label-default">C#</span>
+									<span class="label label-pill label-default">Problem Solving</span>
+								</p>
+								<a href="https://github.com/mwkim0919/CodeAbbey" class="btn btn-secondary" target="_blank">Repository</a> 
+							</div>
+						</div>
+						<div class="card">
+							<img class="card-img-top img-fluid" src="image/junglar.png" alt="junglar">
+							<div class="card-block">
+								<h4 class="card-title">Bella Project Game Jam<br><small class="text-muted">Mobile Game</small></h4>
+								<p class="card-text">Game made for people with Cystic Fibrosis making their PEP therapy more exciting!</p>
+								<p class="card-text">
+									<strong>Tags: </strong>
+									<span class="label label-pill label-default">C#</span>
+									<span class="label label-pill label-default">Unity</span>
+								</p>
+								<a href="https://github.com/zuerst/BellaProject" class="btn btn-secondary" target="_blank">Repository</a> 
+							</div>
 						</div>
 					</div>
 				</div>

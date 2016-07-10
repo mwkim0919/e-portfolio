@@ -1,3 +1,26 @@
+/* responsive font */
+html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
+}
+
 /* scrolling css */
 .scrollfade {
   opacity:0;
@@ -51,9 +74,35 @@ body {
 }
 
 /* setting img height for education section */
-.education img {
+.chem {
+  background-image: url("../image/chemistry.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   width: 100%;
-  height: 500px;
+  height: 400px;
+}
+
+.compsci {
+  background-image: url("../image/code.png");
+  background-repeat: no-repeat;
+  background-size: 100% 110%;
+  background-position: 0px -40px;
+  width: 100%;
+  height: 400px;
+}
+
+.chem-text {
+  padding-top: 275px;
+  z-index: 10;
+  color: black;
+  text-align: center;
+}
+
+.compsci-text {
+  padding-top: 240px;
+  z-index: 10;
+  color: #ffffff;
+  text-align: center;
 }
 
 /* project section css */
@@ -76,5 +125,9 @@ body {
 }
 
 .project-text {
-  top: 50px;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
 }

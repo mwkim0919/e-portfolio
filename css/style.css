@@ -131,3 +131,17 @@ body {
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
 }
+
+/* experience section css */
+#experience {
+  padding-top: 40px;
+  background-color: #F3EFE0;
+}
+
+.experience div {
+  margin-bottom: 20px;
+}
+
+.career-descript p {
+  line-height: 23px;
+}

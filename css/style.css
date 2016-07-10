@@ -23,12 +23,13 @@ html {
 
 /* scrolling css */
 .scrollfade {
-  opacity:0;
+  opacity: 0;
 }
 
 /* body padding for fixed navbar */
 body {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* Carousel base class */
@@ -169,4 +170,18 @@ span.separator {
   .separator {
     display: none;
   }
+}
+
+/* footer css */
+.nav-footer {
+  text-align: center;
+}
+
+small.footer {
+  display: inline-block;
+  float: none;
+}
+
+.facebook {
+  margin-top: 5px;
 }

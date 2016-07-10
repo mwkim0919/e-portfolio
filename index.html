@@ -21,7 +21,7 @@
 </head>
 <body>
 	<div class="header">
-		<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+		<nav class="navbar navbar-fixed-top navbar-light" style="background-color: #e9e7da;">
 			<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
 				&#9776;
 			</button>
@@ -29,19 +29,16 @@
 				<a class="navbar-brand" href="#"><span><img src="image/mk.png"></span>  Minwoo Kim</a>
 				<ul class="nav navbar-nav pull-xs-right">
 					<li class="nav-item">
-						<a class="nav-link scroll-link" href="#" data-id="about">About</a>
+						<strong><a class="nav-link scroll-link" href="#" data-id="about">About</a></strong>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link scroll-link" href="#" data-id="education">Education</a>
+						<strong><a class="nav-link scroll-link" href="#" data-id="education">Education</a></strong>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link scroll-link" href="#" data-id="project">Skill/Project</a>
+						<strong><a class="nav-link scroll-link" href="#" data-id="project">Skill/Project</a></strong>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link scroll-link" href="#" data-id="experience">Experience</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link scroll-link" href="#" data-id="contact">Contact</a>
+						<strong><a class="nav-link scroll-link" href="#" data-id="experience">Experience</a></strong>
 					</li>
 				</ul>
 			</div>
@@ -166,11 +163,11 @@
 
 <!-- Experience
 	================================================== -->
-	<div id="experience" class="scrollfade">
+	<div id="experience">
 		<div class="container">
 			<h2>Careers</h2>
 			<hr>
-			<div class="experience row">
+			<div class="experience row scrollfade">
 				<div class="col-md-4">
 					<h4>University of British Columbia</h4>
 					<p><strong>Part-time - Teaching Assistant</strong><br>May 2015 - June 2015</p>
@@ -196,7 +193,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="experience row">
+			<div class="experience row scrollfade">
 				<div class="col-md-4">
 					<h4>British Columbia Institution of Technology</h4>
 					<p><strong>Co-op / Intern - Research Assistant</strong><br>May 2011 - August 2011</p>
@@ -222,7 +219,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="experience row">
+			<div class="experience row scrollfade">
 				<div class="col-md-4">
 					<h4>Defense Research and Development Canada</h4>
 					<p><strong>Co-op / Intern - Research Assistant</strong><br>January 2011 - April 2011</p>
@@ -248,7 +245,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="experience row">
+			<div class="experience row scrollfade">
 				<div class="col-md-4">
 					<h4>The United Parcel Service (UPS)</h4>
 					<p><strong>Part-time - Sales Associate</strong><br>August 2009 - December 2010</p>
@@ -274,7 +271,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="experience row">
+			<div class="experience row scrollfade">
 				<div class="col-md-4">
 					<h4>Sales Master Korea</h4>
 					<p><strong>Part-time - Translator</strong><br>July 2008 - December 2013</p>
@@ -297,6 +294,37 @@
 			</div>
 		</div>
 	</div>
+	
+<!-- Contact
+	================================================== -->
+	<nav class="navbar navbar-fixed-bottom navbar-light bg-faded">
+		<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar3">
+				&#9776;
+		</button>
+		<div class="collapse navbar-toggleable-xs nav-footer" id="exCollapsingNavbar3">
+			<!-- <a class="navbar-brand" href="#"><span><img src="image/mk.png"></span></a> -->
+			<ul class="nav navbar-nav pull-xs-left">
+				<li class="nav-item">
+					<a class="navbar-brand" href="https://www.facebook.com/minwoo.kim.56" target="_blank"><span><img src="glyphicon/glyphicons-social-31-facebook.png"></span></a>
+				</li>
+				<li class="nav-item">
+					<a class="navbar-brand" href="https://www.instagram.com/mwkim89" target="_blank"><span><img src="glyphicon/glyphicons-social-33-instagram.png"></span></a>
+				</li>
+				<li class="nav-item">
+					<a class="navbar-brand" href="https://ca.linkedin.com/in/mwkim89" target="_blank"><span><img src="glyphicon/glyphicons-social-18-linked-in.png"></span></a>
+				</li>
+				<li class="nav-item">
+					<a class="navbar-brand" href="https://github.com/mwkim0919" target="_blank"><span><img src="glyphicon/glyphicons-social-22-github.png"></span></a>
+				</li>
+			</ul>
+			<small class="navbar-brand footer">&copy; 2016, Minwoo Kim</small>
+			<div class="nav navbar-nav pull-xs-right facebook">
+				<iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fmwkim.net76.net%2F&width=100&layout=button_count&action=like&size=large&show_faces=false&share=false&height=21&appId" width="100" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fmwkim.net76.net%2F&layout=button_count&size=large&mobile_iframe=true&width=68&height=20&appId" width="100" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			</div>
+		</div>
+	</nav>
+
 <!-- Modal
 	================================================== -->
 	<div class="modal fade" id="chem" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

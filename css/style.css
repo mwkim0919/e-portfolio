@@ -139,9 +139,34 @@ body {
 }
 
 .experience div {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .career-descript p {
-  line-height: 23px;
+  line-height: 20px;
+}
+
+span.separator {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* experience section for small screen */
+@media (max-width: 767px) {
+  .hidden-phone {
+    display: none;
+  }
+
+  .experience-misc {
+    margin-top: -20px;
+  }
+
+  .experience-details > span {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .separator {
+    display: none;
+  }
 }

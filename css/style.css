@@ -28,15 +28,11 @@ html {
 
 /* body padding for fixed navbar */
 body {
-  padding-top: 50px;
+  padding-top: 45px;
   padding-bottom: 50px;
 }
 
 /* Carousel base class */
-.carousel {
-  /*margin-bottom: 3rem;*/
-}
-
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -44,9 +40,21 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 35rem;
-  background-color: #777;
+  height: 32rem;
 }
+
+.first {
+  background-color: #20948b;
+}
+
+.second {
+  background-color: #6ab187;
+}
+
+.third {
+  background-color: #de7a22;
+}
+
 .carousel-item > img {
   position: absolute;
   top: 0;

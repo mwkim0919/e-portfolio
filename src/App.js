@@ -1,14 +1,18 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import { Provider } from "react-redux";
 
-import Routes from './Routes'
+import store from "./store";
+import Routes from "./Routes";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Routes />
-      </div>
+      <Provider store={store}>
+        <div className="App">
+          <Routes />
+        </div>
+      </Provider>
     );
   }
 }

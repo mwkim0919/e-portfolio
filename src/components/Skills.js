@@ -10,23 +10,29 @@ class Skills extends Component {
 
   render() {
     const skills = this.props.skills;
-    console.log(skills.programLanguages);
-    // const programLanguages = skills.programLanguages.map(programLanguage => (
-    //   <div key={programLanguage.title}>
-    //     <h6>{programLanguage.title}</h6>
-    //     <p>{programLanguage.profiency}</p>
-    //   </div>
-    // ));
-    // const tools = skills.tools.map(tool => (
-    //   <div key={tool.title}>
-    //     <h6>{tool.title}</h6>
-    //     <p>{tool.profiency}</p>
-    //   </div>
-    // ));
+    const programLanguages = skills.programLanguages
+      .sort((a, b) => b.proficiency - a.proficiency)
+      .map(programLanguage => (
+        <div key={programLanguage.title}>
+          <h6>
+            {programLanguage.title} - {programLanguage.proficiency}
+          </h6>
+        </div>
+      ));
+    const tools = skills.tools
+      .sort((a, b) => b.proficiency - a.proficiency)
+      .map(tool => (
+        <div key={tool.title}>
+          <h6>
+            {tool.title} - {tool.proficiency}
+          </h6>
+        </div>
+      ));
     return (
       <div>
-        {/* {programLanguages} */}
-        {/* {tools} */}
+        {programLanguages}
+        <hr />
+        {tools}
       </div>
     );
   }
@@ -34,7 +40,7 @@ class Skills extends Component {
 
 Skills.propTypes = {
   fetchSkills: PropTypes.func.isRequired,
-  skills: PropTypes.object
+  skills: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({

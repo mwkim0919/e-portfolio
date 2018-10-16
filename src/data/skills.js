@@ -9,7 +9,7 @@ export const SKILLS = {
       proficiency: 4
     },
     {
-      title: "JavaScript",
+      title: "Javascript",
       proficiency: 3
     },
     {

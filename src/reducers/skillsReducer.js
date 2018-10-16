@@ -1,7 +1,10 @@
 import { FETCH_SKILLS } from "../actions/types";
 
 const initialState = {
-  item: {}
+  item: {
+    programLanguages: [],
+    tools: []
+  }
 };
 
 export default (state = initialState, action) => {

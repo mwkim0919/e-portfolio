@@ -7,6 +7,8 @@ import {
 } from "./types";
 import { EXPERIENCES } from "../data/experience";
 import { SKILLS } from "../data/skills";
+import { EDUCATION } from "../data/education";
+import { PROJECTS } from "../data/projects";
 
 export function changeTheme() {
   return {
@@ -24,7 +26,7 @@ export function fetchExperience() {
 export function fetchProjects() {
   return {
     type: FETCH_PROJECTS,
-    payload: []
+    payload: PROJECTS
   };
 }
 
@@ -38,6 +40,6 @@ export function fetchSkills() {
 export function fetchEducation() {
   return {
     type: FETCH_EDUCATION,
-    payload: []
+    payload: EDUCATION
   };
 }
